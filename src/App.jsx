@@ -74,7 +74,6 @@ export default function App() {
       <h1 className='text-xl font-bold text-center'>Lista de tarefas proz</h1>
       <hr />
       <div>
-        <br />
         <input
           className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full px-2'
           type="text"
