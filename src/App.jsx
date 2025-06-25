@@ -70,12 +70,14 @@ export default function App() {
   }, []);
 
   return (
-    <>
-      <h1>Lista de tarefas proz</h1>
+    <div className='bg-indigo-500 mt-10 p-5 rounded-lg'>
+      <h1 className='text-xl font-bold text-center'>Lista de tarefas proz</h1>
+      <hr />
       <div>
         <label htmlFor="addTarefa">Adicionar Tarefa</label>
         <br />
         <input
+          className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full px-2'
           type="text"
           id="addTarefa"
           value={tarefaInput}
@@ -83,7 +85,12 @@ export default function App() {
             setTarefaInput(e.target.value);
           }}
         />
-        <button onClick={salvarTarefa}>Adicionar</button>
+        <button 
+          className='ml-4 rounded-lg px-1 cursor-pointer bg-sky-800 hover:bg-sky-900' 
+          onClick={salvarTarefa}
+        >
+            Adicionar
+        </button>
       </div>
       <ul>
         {listaTarefa.map((tarefa, index) => (
@@ -125,6 +132,6 @@ export default function App() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
