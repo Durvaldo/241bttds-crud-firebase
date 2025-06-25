@@ -74,7 +74,6 @@ export default function App() {
       <h1 className='text-xl font-bold text-center'>Lista de tarefas proz</h1>
       <hr />
       <div>
-        <label htmlFor="addTarefa">Adicionar Tarefa</label>
         <br />
         <input
           className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full px-2'
@@ -89,7 +88,7 @@ export default function App() {
           className='ml-4 rounded-lg px-1 cursor-pointer bg-sky-800 hover:bg-sky-900' 
           onClick={salvarTarefa}
         >
-            Adicionar
+            Adicionar tarefa
         </button>
       </div>
       <ul>
