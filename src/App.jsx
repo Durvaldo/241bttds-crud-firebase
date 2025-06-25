@@ -71,7 +71,7 @@ export default function App() {
 
   return (
     <>
-      <h1>Lista de tarefas</h1>
+      <h1>Lista de tarefas proz</h1>
       <div>
         <label htmlFor="addTarefa">Adicionar Tarefa</label>
         <br />
